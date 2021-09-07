@@ -1,14 +1,16 @@
-name: noaa2
+name: noaa
 channels:
   - conda-forge
-  - defaults
 dependencies:
+  - python=3.6
+  - pip
   - bottleneck
   - dask
   - fiona
   - ipykernel
   - jupyter
   - matplotlib
+  - netCDF4
   - numpy
   - pandas
   - xarray
@@ -18,7 +20,10 @@ dependencies:
   - regionmask
   - scipy
   - seaborn
+  - scikit-learn
   - pip:
-    - netCDF4
     - datetime
     - rasterio
+    - cartopy
+    - statsmodels
+    - h5py

@@ -2,3 +2,8 @@
 *.icloud
 *.DS_Store
 .ipynb_checkpoints/
+src/__pycache__/
+# ignore setup file specific to GFDL
+src/conda_setup.sh 
+notebooks/.ipynb_checkpoints/
+notebooks/Old_Notebooks/

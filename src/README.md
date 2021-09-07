@@ -1,0 +1,5 @@
+# Scripts for Processing Raw SPEAR Output Data
+These scripts process `netcdf` files from the SPEAR-MED LE run to z-score indicies which we use in our analysis of drought conditions. All z-scores are based off of  an emirical cumulative distribution function (ECDF) of the historical climatology based on that region. Values range from $ z \in [-2.4, 2.4]$ as we have roughly 100 years of historical data and so cannot accurately estimate larger extremes. 
+
+## The script
+The [`process_ens.py`](process_ens.py) script is a cleaned example workflow for calculating snow water equivalent deviations across the historical period. We use the snow script as an example, the deviations for the other climatologies can be found in this [folder](P_and_T_zscore_compute). All basic imports needed to run the script can be found in the [`imports.py`](imports.py) file and helper functions are located in [`utils.py`](utils.py). 
