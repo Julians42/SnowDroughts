@@ -20,12 +20,12 @@ from netCDF4 import Dataset # for saving netcdfs
 # packages for shape files and masking netcdfs
 from shapely import wkb, wkt
 from shapely.geometry import Point, shape, Polygon, MultiPolygon
-from descartes import PolygonPatch
+#from descartes import PolygonPatch
 from matplotlib.collections import PatchCollection
-from rasterio import features
+#from rasterio import features
 import fiona
-import geopandas as gpd
-import regionmask # for selecting regions from xarray
+#import geopandas as gpd
+#import regionmask # for selecting regions from xarray
 
 import cartopy
 import cartopy.crs as ccrs
