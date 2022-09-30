@@ -24,8 +24,7 @@ t_high_r = xr.open_mfdataset("/Users/julianschmitt/Downloads/NOAA/climatology/t_
 prec_r = xr.open_mfdataset("/Users/julianschmitt/Downloads/NOAA/climatology/prec_regridded.nc")
 
 # focus on swe first
-# take 3 month rolling average 
-ds2 = swe.resample(time="1M").mean().rolling(time=3).mean()
+ds2 = swe.resample(time="1M").mean()
 
 lat_new = np.arange(32, 49, 0.5)
 lon_new = np.arange(235, 255, 0.5)
