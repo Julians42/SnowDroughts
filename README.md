@@ -31,6 +31,18 @@ In the works is a reoccurance analysis which seeks to answer questions like:
 2. What months are likely to see the most effects? Is it shoulder seasons or will mid-winter also be hard hit?
 These questions are actively being explored in [`Analyzes Drought Reoccurance`](notebooks/Analyzes_Drought_Reoccurrence.ipynb).
 
+## Data Availability
+Our code for this project can be found in the Snow Droughts repository (\url{https://github.com/Julians42/Snow_Droughts}) which is registered under doi: \texttt{10.5281/zenodo.7130302}. \\
+\noindent\textbf{HUC2 Shapefiles}
+The HUC2 shapefiles used to group data by HUC2 are available via FTP from NOAA's ESRL: You can access the shapefiles by connecting to: \texttt{ftp1.esrl.noaa.gov}, username: \texttt{anonymous}, your email address as password and port: 22. Files are titled \texttt{WBD\_\{XX\}\_HU2\_Shape.zip} for each region XX in 1-18. We ended up including these in our dataset - see doi: \texttt{10.5281/zenodo.7121527}.\\
+\noindent\textbf{Livneh Dataset}
+The livneh dataset is also available online via \url{https://psl.noaa.gov/data/gridded/data.livneh.html}, and can also be accessed via FTP at: \texttt{ftp2.psl.noaa.gov}, logging in with username \texttt{anonymous} and your email as the password and port 22 for public connection. \\
+\noindent\textbf{SPEAR Data Online:}
+SPEAR-MED data is partially available directly through GFDL's online server, found \url{https://www.gfdl.noaa.gov/spear_large_ensembles/} for the entire globe. The website provides the opportunity to download monthly mean historical temperature and precipitation data, alongside temperature and precipitation data under RCP5-8.5 by decade. 
+
+\noindent\textbf{SPEAR Data via Zenodo:}
+GFDL does not provide monthly snow data for either the historical or future simulated events, nor does it provide any data for RCP2-4.5, nor does it provide temperature maximum or minimum values which we use for analysis in the supplemental. Only 4/15 of the data we used was available directly from GFDL, and as it's filed by decade across the whole globe, it would require roughly a 120 GB download. We decided to crop all this data to make our work more easily reproducible, which is available under doi: \texttt{10.5281/zenodo.7121527}.
+
 ## Contributing
 <img src="docs/assets/NOAA_LOGO.png" height ="150"> <img src="docs/assets/GFDL_LOGO.png" height="150"/> <br />
 This project is funded by NOAA as part of their Hollings Program. I am working under supervision of Boulder/PSL's Mimi Hughes, and Princeton/GFDL's Nathaniel Johnson and Kai-Chih Tseng. If you are interested in the project and want to make a suggestion or have found a bug please feel free to open an issue! 
